@@ -1,0 +1,142 @@
+.features-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 16px 40px 16px;
+  text-align: center;
+  color: var(--text);
+}
+
+.features-hero-inner h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.features-hero-inner p {
+  margin-top: 12px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.features-services-section {
+  background: var(--surface);
+  padding: 40px 0 40px 0;
+}
+
+.features-services-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.service-card {
+  flex: 1;
+  padding: 24px 18px 32px 18px;
+  text-align: center;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+  border: 3px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  margin: 0 auto 18px auto;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.features-mid-row {
+  background: var(--surface-alt);
+  padding: 40px 0 60px 0;
+}
+
+.features-footer-strip {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 40px 0 60px 0;
+}
+
+.features-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  font-size: 14px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.footer-column p {
+  color: var(--muted);
+}
+
+.tag-pill {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+.tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.contact-info-list li {
+  margin-bottom: 8px;
+}
+
+.footer-24 {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+@media (max-width: 1000px) {
+  .services-row {
+    flex-direction: column;
+  }
+
+  .features-footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .features-footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
+

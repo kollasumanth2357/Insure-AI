@@ -1,0 +1,156 @@
+/* PAGE BACKGROUND */
+.login-page {
+  background: var(--bg);
+  padding: 60px 0;
+}
+
+/* MAIN WRAPPER */
+.login-container {
+  width: 88%;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+}
+
+/* LEFT LOGIN CARD */
+.login-card {
+  flex: 1;
+  background: var(--surface);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.login-card h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.title-underline {
+  width: 90px;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 30px;
+}
+
+/* LABELS */
+.login-card label {
+  display: block;
+  font-weight: 500;
+  margin: 16px 0 6px;
+}
+
+/* INPUTS + SELECT (UPDATED) */
+.login-card input,
+.login-card select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background: var(--surface-alt);
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+/* Focus effect */
+.login-card input:focus,
+.login-card select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.3);
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  width: 100%;
+  margin-top: 28px;
+  padding: 14px;
+  background: var(--accent);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background: var(--primary);
+}
+
+/* RIGHT ASSIST CARD */
+.assist-card {
+  flex: 1;
+  background: var(--surface);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.assist-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.assist-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 20px;
+}
+
+.assist-card p {
+  color: var(--muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* ASSIST ITEMS */
+.assist-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.icon {
+  color: var(--accent);
+  font-size: 18px;
+}
+/* Password Eye Wrapper */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Strength Meter */
+.strength-bar-container {
+  width: 100%;
+  height: 6px;
+  background: var(--border);
+  border-radius: 5px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.strength-bar {
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+.password-rules {
+  font-size: 12px;
+  margin-top: 5px;
+}

@@ -1,0 +1,163 @@
+.appointments-page {
+  background: radial-gradient(circle at top, #eef2ff, #f8fafc 45%, #f1f5f9 100%);
+  min-height: 100vh;
+  color: #0f172a;
+}
+
+.appointments-hero {
+  padding: 48px 24px 24px;
+  text-align: center;
+}
+
+.appointments-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.appointments-hero p {
+  color: #475569;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.appointments-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 24px;
+  padding: 0 24px 48px;
+}
+
+.appointments-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  padding: 24px;
+}
+
+.appointments-card h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.appointments-form {
+  display: grid;
+  gap: 14px;
+}
+
+.appointments-form label {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.appointments-form input,
+.appointments-form select,
+.appointments-form textarea {
+  border: 1px solid #cbd5f5;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.appointments-form button {
+  background: #1d4ed8;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.appointments-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.agent-map {
+  width: 100%;
+  height: 320px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.agent-list {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.agent-list button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.agent-list button.active {
+  border-color: #1d4ed8;
+  background: #eef2ff;
+}
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appointment-table th,
+.appointment-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.status-pill {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.agent-appointments {
+  padding: 24px;
+}
+
+.agent-appointments h1 {
+  margin-bottom: 16px;
+}
+
+.status-update {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.status-update select {
+  border: 1px solid #cbd5f5;
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+.status-update button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .appointments-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,125 @@
+.navbar {
+  width: 100%;
+  background: var(--navbar-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+
+  position: relative;      /* 🔥 important */
+  z-index: 10000;          /* 🔥 keeps navbar above hero image */
+}
+
+.navbar h2 {
+  color: var(--navbar-text);
+  font-weight: 600;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+/* Default links */
+.navbar a {
+  text-decoration: none;
+  color: var(--navbar-text);
+  font-weight: 500;
+  padding-bottom: 4px;
+  transition: 0.3s;
+}
+
+/* Active page */
+.active-link {
+  color: #000000 !important;
+  border-bottom: 2px solid #000000;
+  font-weight: 600;
+}
+
+/* ================= PROFILE SECTION ================= */
+
+.profile-menu {
+  position: relative;
+}
+
+.profile-trigger {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--navbar-text);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.profile-trigger:hover {
+  color: var(--accent);
+}
+
+.role-badge {
+  background: var(--accent);
+  color: var(--text);
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* ================= DROPDOWN ================= */
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: var(--surface);
+  color: var(--text);
+  min-width: 170px;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+
+  z-index: 9999;   /* 🔥 appears above hero image */
+}
+
+.dropdown div {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropdown div:hover {
+  background: var(--surface-alt);
+}
+
+.dropdown-role {
+  font-size: 13px;
+  color: var(--muted);
+  cursor: default;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--navbar-text);
+  color: var(--navbar-text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Smooth show animation */
+.dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

@@ -1,0 +1,230 @@
+.contact-hero {
+  background: var(--accent);
+  padding: 40px 0;
+}
+
+.contact-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text);
+}
+
+.contact-hero-inner h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.contact-breadcrumb {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+
+.contact-breadcrumb .link {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.contact-breadcrumb .current {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contact-map-section {
+  background: var(--surface-alt);
+  padding: 30px 0 50px 0;
+}
+
+.contact-map-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.contact-map-wrapper .contact-map {
+  width: 100%;
+  height: 360px;
+  background: var(--surface);
+}
+
+.map-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1001;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.map-toggle-label {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.map-toggle-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.map-toggle-actions button {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.map-toggle-actions button.active {
+  background: var(--accent);
+  color: var(--text);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.contact-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 0 80px 0;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+}
+
+.contact-column h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.contact-column .underline {
+  width: 120px;
+  height: 3px;
+  background: var(--accent);
+  margin: 12px 0 18px 0;
+}
+
+.contact-intro {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 0;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.appointment-card {
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.appointment-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.leaflet-popup-content button {
+  margin-top: 8px;
+  background: var(--accent);
+  color: var(--text);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.contact-info-text {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px 0;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.contact-details li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-details .icon {
+  width: 22px;
+}
+
+.social-media h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.social-icons button {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid var(--accent);
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .contact-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 16px 60px 16px;
+  }
+
+  .contact-hero-inner,
+  .contact-map-wrapper {
+    margin: 0 16px;
+  }
+}
+
