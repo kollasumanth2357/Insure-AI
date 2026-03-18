@@ -1,22 +1,17 @@
-# Node
+# Backend (Spring Boot)
+target/
+*.log
+*.class
+*.jar
+
+# Frontend (React/Angular)
 node_modules/
 dist/
 build/
 
-# Java
-target/
-*.class
-
-# Logs
-*.log
+# IDE
+.idea/
+.vscode/
 
 # OS
 .DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-
-# Env
-.env
